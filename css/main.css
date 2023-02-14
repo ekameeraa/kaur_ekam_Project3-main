@@ -3,13 +3,21 @@ body {
     font-size: 18px;
 }
 
-h1, h2 {
+h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 28px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: indigo;
 }
 
 .container {
@@ -17,6 +25,11 @@ p {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+}
+
+#column-con {
+    display: flex;
+    flex-direction: column;
 }
 
 #box1 {
@@ -43,8 +56,7 @@ p {
     height: 300px;
 }
 
-/* at 400px and below */
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 641px) {
     
     #box1 {
         width: 50%;
@@ -55,4 +67,13 @@ p {
         color: white;
         width: 50%;
     }
+
+    #box3 {
+        width: 50%;
+    }
+
+    #box4 {
+        width: 50%;
+    }
+
 }
